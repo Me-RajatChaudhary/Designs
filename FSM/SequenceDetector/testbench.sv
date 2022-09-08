@@ -6,6 +6,7 @@ module tb_seq_det_mealy;
   //Instantiate RTL
   seq_detect_mealy SQDM(.*);
   
+  //Drive Stimulus
   initial begin
     clk=1'b1; clr=1'b1; x=1'b0;    
     #3 x=1'b0;
@@ -18,6 +19,7 @@ module tb_seq_det_mealy;
     #5 $finish;
   end
   
+  //Clock generate
   always #1 clk= ~clk; 
   
   //Dump waveforms, monitor
