@@ -1,0 +1,4 @@
+Pipeline Example
+Stage1: x1 = A+B; x2 = C+D;
+Stage2: x3 = x1 + x2;
+Stage3: F = x3 * D;
