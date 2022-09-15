@@ -1,0 +1,5 @@
+Register Bank: 16 - 16bit registers, Memory - 256x16
+Stage 1: Read two 16 bit numbers from registers specified by rs1 and rs2 and store them in A and B.
+Stage 2: Perform an ALU operation on A and B specified by func and store it in Z
+Stage 3: Write the value of Z in register specified by Z
+Stage 4: Write value of Z in memory location addr.
